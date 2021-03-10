@@ -3,10 +3,10 @@ T = 0
 
 # your code here
 
-toplam = 0
+sum = 0
 
-while toplam < B:
-  toplam = 0
+while sum < B:
+  sum = 0
   T += 1
   for i in range(1,n+1):
     
@@ -16,7 +16,7 @@ while toplam < B:
       else:
         pi = 3**(i) + 1
         
-      toplam += (pi**(n-(i)))*T
+      sum += (pi**(n-(i)))*T
   if T > 10000:
     T = -1
     break

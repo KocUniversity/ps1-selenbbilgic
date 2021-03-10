@@ -8,7 +8,7 @@ upper = 10000
 k = 0
 
 while k < 100:
-    toplam = 0
+    sum = 0
     T = (lower + upper) // 2
 
     for i in range(n):
@@ -19,11 +19,11 @@ while k < 100:
         else:
             ps = 3 ** (i + 1) + 1
 
-        toplam += (ps ** (n - (i + 1))) * T
+        sum += (ps ** (n - (i + 1))) * T
 
-    if toplam > B:
+    if sum > B:
         upper = T
-    elif toplam < B:
+    elif sum < B:
         lower = T
     else:
         break
